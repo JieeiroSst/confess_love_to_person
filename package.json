@@ -2,19 +2,26 @@
   "name": "confess_loveto_person",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "api.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon src/api.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@koa/cors": "^5.0.0",
     "@koa/router": "^12.0.1",
     "co-views": "^2.1.0",
+    "dotenv": "^16.3.1",
     "koa": "^2.15.0",
+    "koa-bodyparser": "^4.4.1",
+    "koa-bunyan-logger": "^2.1.0",
+    "koa-ping-healthcheck": "^1.2.0",
+    "koa-router": "^12.0.1",
     "koa-static": "^5.0.0",
+    "netlify-lambda": "^2.0.16",
     "nodemon": "^3.0.2",
-    "public": "^0.1.5"
+    "public": "^0.1.5",
+    "serverless-http": "^3.2.0"
   }
 }
